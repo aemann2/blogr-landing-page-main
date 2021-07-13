@@ -6,74 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="./styles/styles.css">
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
   <header class='header'>
-    <nav class='nav'>
-      <div class='navbar'>
-        <div class='navbar__logo'></div>
-        <div class='navbar__dropdown'>
-          <button class='navbar__dropdown__dropbtn'>Product
-            <i class='navbar__dropdown__dropbtn__arrow'></i>
-          </button>
-          <div class='navbar__dropdown__content'>
-            <a class='navbar__dropdown__content__link' href="#">Overview</a>
-            <a class='navbar__dropdown__content__link' href="#">Pricing</a>
-            <a class='navbar__dropdown__content__link' href="#">Marketplace</a>
-            <a class='navbar__dropdown__content__link' href="#">Features</a>
-            <a class='navbar__dropdown__content__link' href="#">Integrations</a>
+    <div class='header__wrapper'>
+      <nav class='nav'>
+        <div class='navbar'>
+          <div class='navbar__logo'></div>
+          <div class='navbar__hamburger'></div>
+          <div class='navbar__dropdown'>
+            <button class='navbar__dropdown__dropbtn'>Product
+              <i class='navbar__dropdown__dropbtn__arrow'></i>
+            </button>
+            <div class='navbar__dropdown__content'>
+              <a class='navbar__dropdown__content__link' href="#">Overview</a>
+              <a class='navbar__dropdown__content__link' href="#">Pricing</a>
+              <a class='navbar__dropdown__content__link' href="#">Marketplace</a>
+              <a class='navbar__dropdown__content__link' href="#">Features</a>
+              <a class='navbar__dropdown__content__link' href="#">Integrations</a>
+            </div>
+          </div>
+          <div class='navbar__dropdown'>
+            <button class='navbar__dropdown__dropbtn'>Company
+              <i class='navbar__dropdown__dropbtn__arrow'></i>
+            </button>
+            <div class='navbar__dropdown__content'>
+              <a class='navbar__dropdown__content__link' href="#">About</a>
+              <a class='navbar__dropdown__content__link' href="#">Team</a>
+              <a class='navbar__dropdown__content__link' href="#">Blog</a>
+              <a class='navbar__dropdown__content__link' href="#">Careers</a>
+            </div>
+          </div>
+          <div class='navbar__dropdown'>
+            <button class='navbar__dropdown__dropbtn'>Connect
+              <i class='navbar__dropdown__dropbtn__arrow'></i>
+            </button>
+            <div class='navbar__dropdown__content'>
+              <a class='navbar__dropdown__content__link' href="#">Contact</a>
+              <a class='navbar__dropdown__content__link' href="#">Newsletter</a>
+              <a class='navbar__dropdown__content__link' href="#">LinkedIn</a>
+            </div>
+            <div class='navbar__btns'>
+              <button class='navbar__btn'>Login</button>
+              <button class='navbar__btn'>Sign Up</button>
+            </div>
           </div>
         </div>
-        <div class='navbar__dropdown'>
-          <button class='navbar__dropdown__dropbtn'>Company
-            <i class='navbar__dropdown__dropbtn__arrow'></i>
-          </button>
-          <div class='navbar__dropdown__content'>
-            <a class='navbar__dropdown__content__link' href="#">About</a>
-            <a class='navbar__dropdown__content__link' href="#">Team</a>
-            <a class='navbar__dropdown__content__link' href="#">Blog</a>
-            <a class='navbar__dropdown__content__link' href="#">Careers</a>
-          </div>
-        </div>
-        <div class='navbar__dropdown'>
-          <button class='navbar__dropdown__dropbtn'>Connect
-            <i class='navbar__dropdown__dropbtn__arrow'></i>
-          </button>
-          <div class='navbar__dropdown__content'>
-            <a class='navbar__dropdown__content__link' href="#">Contact</a>
-            <a class='navbar__dropdown__content__link' href="#">Newsletter</a>
-            <a class='navbar__dropdown__content__link' href="#">LinkedIn</a>
-          </div>
-        </div>
-        <div class='navbar__btns'>
-          <button class='navbar__btn'>Login</button>
-          <button class='navbar__btn'>Sign Up</button>
-        </div>
+      </nav>
+      <div class='heading'>
+        <h1 class='heading__main'>A modern publishing platform</h1>
+        <p class='heading__sub'>Grow your audience and build your online brand</p>
       </div>
-    </nav>
-    <div class='heading'>
-      <h1 class='heading__main'>A modern publishing platform</h1>
-      <p class='heading__sub'>Grow your audience and build your online brand</p>
-    </div>
-    <div class='heading__btns'>
-      <button class='heading__btn'>Start for Free</button>
-      <button class='heading__btn'>Learn More</button>
+      <div class='heading__btns'>
+        <button class='heading__btn'>Start for Free</button>
+        <button class='heading__btn'>Learn More</button>
+      </div>
     </div>
   </header>
 
