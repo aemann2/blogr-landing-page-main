@@ -43,22 +43,32 @@ body {
 
 .navbar {
 	display: flex;
-	height: 8rem;
-	padding: 2rem 1rem;
+	justify-content: center;
+	align-items: center;
+	height: 6rem;
+	padding: 0rem 1rem;
 	justify-content: space-between;
 
 	&__logo {
 		width: 5rem;
+		height: 2rem;
 		background-image: url('../images/logo.svg');
 		background-size: 5rem;
 		background-repeat: no-repeat;
 	}
 
 	&__hamburger {
-		width: 5rem;
+		width: 3rem;
+		height: 2rem;
 		background-image: url('../images/icon-hamburger.svg');
 		background-size: 3em;
 		background-repeat: no-repeat;
+	}
+
+	&__hamburger, &__logo {
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	&__dropdown {
