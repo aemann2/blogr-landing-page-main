@@ -20,7 +20,6 @@ body {
   min-height: 100vh;
   font-size: 100%;
   font-family: 'Overpass', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .header {
@@ -29,6 +28,7 @@ body {
   color: white;
   font-family: 'Overpass', sans-serif;
   font-weight: 300;
+  border-radius: 0 0 0 90px;
 }
 
 .header__wrapper {
@@ -77,6 +77,36 @@ body {
 
 .navbar__dropdown {
   display: none;
+}
+
+.heading {
+  text-align: center;
+  padding: 2.6rem;
+}
+
+.heading__btns {
+  margin: 2rem 0 4rem 0;
+}
+
+.heading__btn {
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: .9rem;
+  padding: .8rem 1.4rem;
+  border-radius: 20px;
+}
+
+.heading__btn--white {
+  background-color: white;
+  color: #ff525d;
+  margin-right: .5rem;
+}
+
+.heading__btn--outline {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
 }
 
 .attribution {
