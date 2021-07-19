@@ -1,9 +1,10 @@
+@import './colors';
+
 .header {
 	background: rgb(255,61,84);
 	background: linear-gradient(315deg, rgba(255,61,84,1) 21%, rgba(255,143,112,1) 67%);
 	color: $white;
 	font-family: 'Overpass', sans-serif;
-	font-weight: 300;
 	border-radius: 0 0 0 90px;
 
 	&__wrapper {
@@ -74,7 +75,7 @@
 		&--outline {
 			border: 1px solid $white;
 			background-color: rgba(255, 255, 255,0);
-			color: white;
+			color: $white;
 		}
 	}
 }
