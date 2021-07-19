@@ -21,38 +21,31 @@
         <div class='navbar'>
           <div class='navbar__logo'></div>
           <div class='navbar__hamburger' id='hamburger'></div>
-          <div class='navbar__dropdown'>
-            <button class='navbar__dropdown__dropbtn'>Product
-              <i class='navbar__dropdown__dropbtn__arrow'></i>
-            </button>
-            <div class='navbar__dropdown__content'>
-              <a class='navbar__dropdown__content__link' href="#">Overview</a>
-              <a class='navbar__dropdown__content__link' href="#">Pricing</a>
-              <a class='navbar__dropdown__content__link' href="#">Marketplace</a>
-              <a class='navbar__dropdown__content__link' href="#">Features</a>
-              <a class='navbar__dropdown__content__link' href="#">Integrations</a>
-            </div>
-          </div>
-          <div class='navbar__dropdown'>
-            <button class='navbar__dropdown__dropbtn'>Company
-              <i class='navbar__dropdown__dropbtn__arrow'></i>
-            </button>
-            <div class='navbar__dropdown__content'>
-              <a class='navbar__dropdown__content__link' href="#">About</a>
-              <a class='navbar__dropdown__content__link' href="#">Team</a>
-              <a class='navbar__dropdown__content__link' href="#">Blog</a>
-              <a class='navbar__dropdown__content__link' href="#">Careers</a>
-            </div>
-          </div>
-          <div class='navbar__dropdown'>
-            <button class='navbar__dropdown__dropbtn'>Connect
-              <i class='navbar__dropdown__dropbtn__arrow'></i>
-            </button>
-            <div class='navbar__dropdown__content'>
-              <a class='navbar__dropdown__content__link' href="#">Contact</a>
-              <a class='navbar__dropdown__content__link' href="#">Newsletter</a>
-              <a class='navbar__dropdown__content__link' href="#">LinkedIn</a>
-            </div>
+          <div class='navbar__menu' id='menu'>
+            <ul class='navbar__menu__dropdowns'>
+              <li class='navbar__menu__dropbtn' id='product'>Product</li>
+              <ul class='navbar__menu__content' id='productLinks'>
+                <li class='navbar__menu__dropdown__link'>Overview</li>
+                <li class='navbar__menu__dropdown__link'>Marketplace</li>
+                <li class='navbar__menu__dropdown__link'>Features</li>
+                <li class='navbar__menu__dropdown__link'>Integrations</li>
+                <li class='navbar__menu__dropdown__link'>Pricing</a>
+              </ul>
+              <li class='navbar__menu__dropbtn' id='company'>Company</li>
+              <ul class='navbar__menu__content' id='companyLinks'>
+                <li class='navbar__menu__dropdown__link'>About</li>
+                <li class='navbar__menu__dropdown__link'>Team</li>
+                <li class='navbar__menu__dropdown__link'>Blog</li>
+                <li class='navbar__menu__dropdown__link'>Careers</li>
+              </ul>
+              <li class='navbar__menu__dropbtn' id='connect'>Connect</li>
+              <ul class='navbar__menu__content' id='connectLinks'>
+                <li class='navbar__menu__dropdown__link'>Connect</li>
+                <li class='navbar__menu__dropdown__link'>Newsletter</li>
+                <li class='navbar__menu__dropdown__link'>LinkedIn</li>
+              </ul>
+            </ul>
+            <hr class='navbar__menu__break' />
             <div class='navbar__btns'>
               <button class='navbar__btn'>Login</button>
               <button class='navbar__btn'>Sign Up</button>

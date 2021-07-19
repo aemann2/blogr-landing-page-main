@@ -1,4 +1,5 @@
 const hamburger = document.querySelector('#hamburger');
+const menu = document.querySelector('#menu');
 
 hamburger.addEventListener('click', () => {
 	let bgImage = hamburger.style.backgroundImage
@@ -8,3 +9,5 @@ hamburger.addEventListener('click', () => {
 		hamburger.style.backgroundImage = 'url("../images/icon-hamburger.svg")';
 	}
 });
+
+console.log(menu);
