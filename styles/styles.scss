@@ -25,6 +25,13 @@ body {
 	font-family: 'Overpass', sans-serif;
 }
 
+li,
+button {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 // Main styles //
 
 .main {
@@ -40,14 +47,14 @@ body {
 		&__main {
 			color: $veryDarkBlue;
 		}
-
 	}
 
 	&__img {
 		&__future {
 			margin: 1.5rem 0;
 			height: 300px;
-			background: url('../images/illustration-editor-mobile.svg') center no-repeat;
+			background: url('../images/illustration-editor-mobile.svg') center
+				no-repeat;
 			background-size: contain;
 		}
 		&__dark {
@@ -61,7 +68,8 @@ body {
 		&__laptop {
 			margin: 1.5rem 0;
 			height: 300px;
-			background: url('../images/illustration-laptop-mobile.svg') center no-repeat;
+			background: url('../images/illustration-laptop-mobile.svg') center
+				no-repeat;
 			background-size: contain;
 		}
 	}
@@ -78,8 +86,12 @@ body {
 
 	&__dark {
 		height: 550px;
-		background: rgb(44,45,63);
-		background: linear-gradient(180deg, rgba(44,45,63,1) 15%, rgba(63,65,100,1) 49%);
+		background: rgb(44, 45, 63);
+		background: linear-gradient(
+			180deg,
+			rgba(44, 45, 63, 1) 15%,
+			rgba(63, 65, 100, 1) 49%
+		);
 		border-radius: 0 90px 0 90px;
 		z-index: -100;
 
@@ -101,7 +113,7 @@ body {
 		&__par {
 			color: $grayishBlue;
 			padding: 0 3rem;
-			font-size: .9rem;
+			font-size: 0.9rem;
 		}
 	}
 }
@@ -110,7 +122,7 @@ body {
 
 .attribution {
 	margin-top: 2rem;
-	font-size: .8rem;
+	font-size: 0.8rem;
 	text-align: center;
 }
 

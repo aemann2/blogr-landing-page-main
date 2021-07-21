@@ -81,10 +81,24 @@
 
 .navbar__menu__dropbtn {
   direction: rtl;
-  list-style-image: url("../images/icon-arrow-dark.svg");
+  list-style-type: none;
   font-size: 1.4rem;
   width: 5rem;
   margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__menu__dropbtn:before {
+  content: url("../images/icon-arrow-dark.svg");
+  display: inline-block;
+  margin: 0.5rem -1rem auto 1rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .navbar__menu__dropdowns {
@@ -92,9 +106,16 @@
 }
 
 .navbar__menu__content {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 1rem;
   padding: 1rem;
-  text-align: center;
   list-style: none;
   line-height: 3rem;
   border-radius: 5px;
@@ -116,6 +137,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 2rem 0;
+}
+
+.navbar__btn {
+  border: none;
+  background-color: white;
+  font-size: 1.2rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+}
+
+.navbar__btn--nobg {
+  margin-bottom: 1rem;
+  color: #1f3f5b;
+}
+
+.navbar__btn--orangebg {
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  background: #ff3d54;
+  background: linear-gradient(315deg, #ff3d54 21%, #ff8f70 67%);
 }
 
 .heading {
@@ -131,15 +174,15 @@
   border: none;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-  font-size: .9rem;
-  padding: .8rem 1.4rem;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.4rem;
   border-radius: 20px;
 }
 
 .heading__btn--white {
   background-color: white;
   color: #ff525d;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .heading__btn--outline {
@@ -216,6 +259,11 @@ body {
   font-family: 'Overpass', sans-serif;
 }
 
+li:hover,
+button:hover {
+  cursor: pointer;
+}
+
 .main {
   text-align: center;
   margin-top: 5rem;
@@ -290,12 +338,12 @@ body {
 .section__dark__par {
   color: #c8c8cb;
   padding: 0 3rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .attribution {
   margin-top: 2rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 
