@@ -128,6 +128,9 @@
 		&--nobg {
 			margin-bottom: 1rem;
 			color: $veryDarkBlue;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		&--orangebg {
@@ -140,6 +143,9 @@
 				rgba(255, 61, 84, 1) 21%,
 				rgba(255, 143, 112, 1) 67%
 			);
+			&:hover {
+				background: $veryLightRed;
+			}
 		}
 	}
 }
@@ -164,18 +170,20 @@
 			background-color: $white;
 			color: $lightRed;
 			margin-right: 0.5rem;
+			&:hover {
+				background-color: $veryLightRed;
+				color: $white;
+			}
 		}
 
 		&--outline {
 			border: 1px solid $white;
 			background-color: rgba(255, 255, 255, 0);
 			color: $white;
+			&:hover {
+				background-color: $white;
+				color: $lightRed;
+			}
 		}
 	}
-}
-
-.rotated-arrow {
-	content: url('../images/icon-arrow-dark.svg');
-	display: inline-block;
-	margin: 0.5rem -1rem auto 1rem;
 }

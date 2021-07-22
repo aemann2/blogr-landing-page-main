@@ -153,12 +153,20 @@
   color: #1f3f5b;
 }
 
+.navbar__btn--nobg:hover {
+  text-decoration: underline;
+}
+
 .navbar__btn--orangebg {
   color: white;
   padding: 0.5rem 2rem;
   border-radius: 30px;
   background: #ff3d54;
   background: linear-gradient(315deg, #ff3d54 21%, #ff8f70 67%);
+}
+
+.navbar__btn--orangebg:hover {
+  background: #ff7a85;
 }
 
 .heading {
@@ -185,16 +193,20 @@
   margin-right: 0.5rem;
 }
 
+.heading__btn--white:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
 .heading__btn--outline {
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0);
   color: white;
 }
 
-.rotated-arrow {
-  content: url("../images/icon-arrow-dark.svg");
-  display: inline-block;
-  margin: 0.5rem -1rem auto 1rem;
+.heading__btn--outline:hover {
+  background-color: white;
+  color: #ff525d;
 }
 
 .footer {
@@ -268,6 +280,7 @@ body {
 li:hover,
 button:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .main {

@@ -3,7 +3,6 @@ const menu = document.querySelector('#menu');
 const product = document.querySelector('#product');
 const company = document.querySelector('#company');
 const connect = document.querySelector('#connect');
-const rotatedArrow = document.querySelector('.rotated-arrow');
 
 const dropdownItems = [product, company, connect];
 
