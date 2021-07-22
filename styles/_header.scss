@@ -10,6 +10,7 @@
 	color: $white;
 	font-family: 'Overpass', sans-serif;
 	border-radius: 0 0 0 90px;
+	overflow: hidden;
 
 	&__wrapper {
 		background: url('../images/bg-pattern-intro.svg');
@@ -169,7 +170,7 @@
 		&--white {
 			background-color: $white;
 			color: $lightRed;
-			margin-right: 0.5rem;
+			margin-bottom: 1rem;
 			&:hover {
 				background-color: $veryLightRed;
 				color: $white;

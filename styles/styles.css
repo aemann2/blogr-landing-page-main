@@ -5,6 +5,7 @@
   color: white;
   font-family: 'Overpass', sans-serif;
   border-radius: 0 0 0 90px;
+  overflow: hidden;
 }
 
 .header__wrapper {
@@ -190,7 +191,7 @@
 .heading__btn--white {
   background-color: white;
   color: #ff525d;
-  margin-right: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .heading__btn--white:hover {
@@ -320,10 +321,6 @@ button:hover {
   background-size: contain;
 }
 
-.section__heading {
-  padding: 0 3.5rem;
-}
-
 .section__par {
   margin: 1rem 0 2rem 0;
   padding: 0 2.5rem;
@@ -358,6 +355,52 @@ button:hover {
   color: #c8c8cb;
   padding: 0 3rem;
   font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 770px) {
+  html {
+    font-size: 18px;
+  }
+  .section__heading {
+    font-size: 1.5rem;
+    padding: 0rem;
+  }
+  .section__heading__main {
+    font-size: 2rem;
+  }
+  .section__par {
+    padding: 0rem;
+  }
+  .section__light {
+    height: 700px;
+  }
+  .section__light__future {
+    background: url("../images/illustration-editor-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: right -200px bottom;
+  }
+  .section__light__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .section__light__wrapper__headings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 50ch;
+  }
 }
 
 .attribution {
