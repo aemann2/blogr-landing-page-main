@@ -368,21 +368,30 @@ button:hover {
   .section__heading__main {
     font-size: 2rem;
   }
+  .section__img {
+    margin: 0;
+    height: 0px;
+    background: none;
+    background-size: contain;
+  }
   .section__par {
     padding: 0rem;
   }
   .section__light {
-    height: 700px;
+    height: 60vw;
   }
   .section__light__future {
     background: url("../images/illustration-editor-desktop.svg") no-repeat;
     background-size: contain;
-    background-position: right -200px bottom;
+    background-position: right -17vw bottom;
+  }
+  .section__light__laptop {
+    background: url("../images/illustration-laptop-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: left -250px bottom;
   }
   .section__light__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    background: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -400,6 +409,13 @@ button:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 50ch;
+  }
+  .section__light__wrapper__headings--right {
+    margin-left: auto;
+  }
+  .section__dark {
+    height: 300px;
+    margin: 4rem 0;
   }
 }
 

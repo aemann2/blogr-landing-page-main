@@ -13,20 +13,33 @@
 			}
 		}
 
+		&__img {
+			margin: 0;
+			height: 0px;
+			background: none;
+			background-size: contain;
+		}
+
 		&__par {
 			padding: 0rem;
 		}
 
 		&__light {
-			height: 700px;
+			height: 60vw;
 			&__future {
 				background: url('../images/illustration-editor-desktop.svg') no-repeat;
 				background-size: contain;
-				background-position: right -200px bottom;
+				background-position: right -17vw bottom;
+			}
+
+			&__laptop {
+				background: url('../images/illustration-laptop-desktop.svg') no-repeat;
+				background-size: contain;
+				background-position: left -250px bottom;
 			}
 
 			&__wrapper {
-				display: flex;
+				background: none;
 				align-items: center;
 				text-align: left;
 
@@ -35,8 +48,17 @@
 					flex: 1;
 					flex-direction: column;
 					max-width: 50ch;
+
+					&--right {
+						margin-left: auto;
+					}
 				}
 			}
+		}
+
+		&__dark {
+			height: 300px;
+			margin: 4rem 0;
 		}
 	}
 }
