@@ -76,9 +76,10 @@ button {
 	}
 
 	&__par {
-		margin: 1rem 0 2rem 0;
+		margin: 1rem auto 2rem auto;
 		padding: 0 2.5rem;
 		color: $drkGrayishBlue;
+		max-width: 60ch;
 	}
 
 	&__dark {
@@ -111,6 +112,7 @@ button {
 			color: $grayishBlue;
 			padding: 0 3rem;
 			font-size: 0.9rem;
+			max-width: 60ch;
 		}
 	}
 }

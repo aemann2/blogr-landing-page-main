@@ -322,9 +322,10 @@ button:hover {
 }
 
 .section__par {
-  margin: 1rem 0 2rem 0;
+  margin: 1rem auto 2rem auto;
   padding: 0 2.5rem;
   color: #4b5862;
+  max-width: 60ch;
 }
 
 .section__dark {
@@ -355,35 +356,50 @@ button:hover {
   color: #c8c8cb;
   padding: 0 3rem;
   font-size: 0.9rem;
+  max-width: 60ch;
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 1200px) {
   html {
     font-size: 18px;
   }
   .section__heading {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     padding: 0rem;
   }
   .section__heading__main {
     font-size: 2rem;
+    padding-top: 4rem;
   }
   .section__img {
-    margin: 0;
-    height: 0px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     background: none;
+  }
+  .section__img__dark {
+    height: 400px;
+    margin-top: 0;
+    margin-bottom: -20rem;
+    margin-left: 2rem;
+    background: url("../images/illustration-phones.svg");
     background-size: contain;
+    background-repeat: no-repeat;
   }
   .section__par {
     padding: 0rem;
+    font-size: 1.3vw;
+    max-width: 40ch;
+    margin: 1rem 0 2rem 0;
   }
   .section__light {
-    height: 60vw;
+    height: 70vw;
+    margin-bottom: 1rem;
   }
   .section__light__future {
     background: url("../images/illustration-editor-desktop.svg") no-repeat;
-    background-size: contain;
-    background-position: right -17vw bottom;
+    background-size: 800px;
+    background-position: right -17vw top 70px;
   }
   .section__light__laptop {
     background: url("../images/illustration-laptop-desktop.svg") no-repeat;
@@ -396,6 +412,13 @@ button:hover {
         -ms-flex-align: center;
             align-items: center;
     text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .section__light__wrapper__headings {
     display: -webkit-box;
@@ -408,14 +431,18 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 50ch;
+    padding-left: 8rem;
+    margin-top: 6rem;
   }
   .section__light__wrapper__headings--right {
     margin-left: auto;
   }
   .section__dark {
     height: 300px;
-    margin: 4rem 0;
+    margin: 0 0;
+  }
+  .section__dark__wrapper {
+    background: none;
   }
 }
 

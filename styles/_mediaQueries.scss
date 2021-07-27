@@ -1,35 +1,48 @@
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 1200px) {
 	html {
 		font-size: 18px;
 	}
 
 	.section {
 		&__heading {
-			font-size: 1.5rem;
+			font-size: 1.5vw;
 			padding: 0rem;
 
 			&__main {
 				font-size: 2rem;
+				padding-top: 4rem;
 			}
 		}
 
 		&__img {
-			margin: 0;
-			height: 0px;
+			flex: 1;
 			background: none;
-			background-size: contain;
+
+			&__dark {
+				height: 400px;
+				margin-top: 0;
+				margin-bottom: -20rem;
+				margin-left: 2rem;
+				background: url('../images/illustration-phones.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
 		}
 
 		&__par {
 			padding: 0rem;
+			font-size: 1.3vw;
+			max-width: 40ch;
+			margin: 1rem 0 2rem 0;
 		}
 
 		&__light {
-			height: 60vw;
+			height: 70vw;
+			margin-bottom: 1rem;
 			&__future {
 				background: url('../images/illustration-editor-desktop.svg') no-repeat;
-				background-size: contain;
-				background-position: right -17vw bottom;
+				background-size: 800px;
+				background-position: right -17vw top 70px;
 			}
 
 			&__laptop {
@@ -42,12 +55,15 @@
 				background: none;
 				align-items: center;
 				text-align: left;
+				display: flex;
+				flex-direction: row-reverse;
 
 				&__headings {
 					display: flex;
 					flex: 1;
 					flex-direction: column;
-					max-width: 50ch;
+					padding-left: 8rem;
+					margin-top: 6rem;
 
 					&--right {
 						margin-left: auto;
@@ -58,7 +74,11 @@
 
 		&__dark {
 			height: 300px;
-			margin: 4rem 0;
+			margin: 0 0;
+
+			&__wrapper {
+				background: none;
+			}
 		}
 	}
 }
