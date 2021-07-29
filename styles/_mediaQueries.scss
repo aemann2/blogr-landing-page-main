@@ -1,6 +1,86 @@
+@import './colors';
+
 @media only screen and (min-width: 1200px) {
 	html {
 		font-size: 18px;
+	}
+
+	.navbar {
+		justify-content: flex-start;
+
+		&__hamburger {
+			display: none;
+		}
+
+		&__menu {
+			display: flex;
+			flex-direction: row;
+			position: static;
+			width: auto;
+			background-color: transparent;
+			border: none;
+			box-shadow: none;
+			margin: 0;
+
+			&__dropdowns {
+				display: flex;
+				flex-direction: row;
+				color: $white;
+			}
+
+			&__dropbtn {
+				font-size: 1rem;
+
+				&__icon {
+					background: url('../images/icon-arrow-light.svg') no-repeat center;
+				}
+			}
+
+			&__break {
+				display: none;
+			}
+		}
+
+		&__btns {
+			flex-direction: row;
+			margin-left: 20rem;
+		}
+
+		&__btn {
+			font-size: 1rem;
+			width: 140px;
+
+			&--nobg {
+				margin-bottom: 0;
+				background-color: transparent;
+				color: $white;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&--orangebg {
+				color: $veryLightRed;
+				padding: 0.5rem 2rem;
+				border-radius: 30px;
+				background-color: $white;
+				background-image: none;
+				&:hover {
+					background: $veryLightRed;
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.heading {
+		&__main {
+			font-size: 2.5rem;
+		}
+
+		&__sub {
+			font-size: 1.3rem;
+		}
 	}
 
 	.section {
@@ -37,18 +117,18 @@
 		}
 
 		&__light {
-			height: 70vw;
+			height: 900px;
 			margin-bottom: 1rem;
 			&__future {
 				background: url('../images/illustration-editor-desktop.svg') no-repeat;
 				background-size: 800px;
-				background-position: right -17vw top 70px;
+				background-position: right -17vw top 80px;
 			}
 
 			&__laptop {
 				background: url('../images/illustration-laptop-desktop.svg') no-repeat;
-				background-size: contain;
-				background-position: left -250px bottom;
+				background-size: 800px;
+				background-position: left -250px top 10px;
 			}
 
 			&__wrapper {
@@ -67,6 +147,7 @@
 
 					&--right {
 						margin-left: auto;
+						order: -1;
 					}
 				}
 			}
@@ -74,7 +155,7 @@
 
 		&__dark {
 			height: 300px;
-			margin: 0 0;
+			margin: 0 0 10rem 0;
 			display: flex;
 			overflow: hidden;
 
@@ -101,5 +182,24 @@
 				max-width: 50ch;
 			}
 		}
+	}
+
+	.footer {
+		flex-direction: row;
+
+		&__logo {
+			margin: 0 0 auto 8rem;
+		}
+
+		&__links {
+			display: flex;
+			justify-content: space-evenly;
+			flex: 2;
+		}
+	}
+	.attribution {
+		position: relative;
+		top: 100px;
+		right: 20px;
 	}
 }
