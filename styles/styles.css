@@ -397,6 +397,22 @@ button:hover {
             flex-direction: row;
     color: white;
   }
+  .navbar__menu__content {
+    position: absolute;
+    background-color: white;
+  }
+  .navbar__menu__content--productLinks {
+    top: 4rem;
+    left: 5rem;
+  }
+  .navbar__menu__content--companyLinks {
+    top: 4rem;
+    left: 13rem;
+  }
+  .navbar__menu__content--connectLinks {
+    top: 4rem;
+    left: 20rem;
+  }
   .navbar__menu__dropbtn {
     font-size: 1rem;
   }

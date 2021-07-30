@@ -28,6 +28,24 @@
 				color: $white;
 			}
 
+			&__content {
+				position: absolute;
+				background-color: $white;
+
+				&--productLinks {
+					top: 4rem;
+					left: 5rem;
+				}
+				&--companyLinks {
+					top: 4rem;
+					left: 13rem;
+				}
+				&--connectLinks {
+					top: 4rem;
+					left: 20rem;
+				}
+			}
+
 			&__dropbtn {
 				font-size: 1rem;
 
