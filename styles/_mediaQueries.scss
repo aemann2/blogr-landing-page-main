@@ -12,6 +12,10 @@
 			display: none;
 		}
 
+		&__logo {
+			min-width: 90px;
+		}
+
 		&__menu {
 			display: flex;
 			flex-direction: row;
@@ -20,7 +24,7 @@
 			background-color: transparent;
 			border: none;
 			box-shadow: none;
-			margin: 0;
+			margin: 0 0 0 2rem;
 
 			&__dropdowns {
 				display: flex;

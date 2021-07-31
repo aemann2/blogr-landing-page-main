@@ -3,6 +3,7 @@ const menu = document.querySelector('#menu');
 const product = document.querySelector('#product');
 const company = document.querySelector('#company');
 const connect = document.querySelector('#connect');
+const dropBtn = document.querySelector('.navbar__menu__dropbtn');
 
 const dropdownItems = [product, company, connect];
 
@@ -27,13 +28,29 @@ dropdownItems.forEach((item) => {
 		const icon = document.querySelector(`#${item.id}Icon`);
 		const links = document.querySelector(`#${item.id}Links`);
 		if (links.style.display === 'none' || links.style.display === '') {
-			item.style.color = 'hsl(206, 13%, 34%)';
+			if (window.innerWidth < 1200) {
+				item.style.color = 'hsl(206, 13%, 34%)';
+			}
 			links.style.display = 'flex';
 			icon.style.transform = 'rotate(180deg)';
 		} else {
-			item.style.color = 'hsl(240, 10%, 16%)';
+			if (window.innerWidth < 1200) {
+				item.style.color = 'hsl(240, 10%, 16%)';
+			}
 			links.style.display = 'none';
 			icon.style.transform = 'rotate(0deg)';
 		}
 	});
+});
+
+window.addEventListener('resize', () => {
+	if (window.innerWidth > 1200) {
+		menu.style.display = 'flex';
+		dropBtn.style.color = 'hsl(0, 0%, 100%)';
+	} else {
+		menu.style.display = 'none';
+	}
+	if (window.innerWidth < 1200) {
+		dropBtn.style.color = 'hsl(240, 10%, 16%)';
+	}
 });
