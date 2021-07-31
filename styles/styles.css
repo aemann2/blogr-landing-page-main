@@ -357,6 +357,7 @@ button:hover {
   padding: 0 3rem;
   font-size: 0.9rem;
   max-width: 60ch;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 1200px) {
